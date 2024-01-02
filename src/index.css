@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Arsenica Bold';
+  src: url("fonts/ArsenicaTrial-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Arsenica Extra Bold';
+  src: url("fonts/ArsenicaTrial-Extrabold.ttf");
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

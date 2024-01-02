@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         rozha: ['Rozha One', 'Serif'],
         montserrat: ['Montserrat','Sans'],
+        inter: ['Inter', 'Sans'],
+        arsenica: ['Arsenica Bold', 'Serif'],
+        arsenicabold: ['Arsenica Extra Bold', 'Serif'],
       }
     },
     container: {
