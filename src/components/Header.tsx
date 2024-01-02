@@ -1,11 +1,26 @@
 export default function Header() {
-  const links = ["skills", "education", "contact", "github"];
+  const links = ["about", "projects", "contact"];
+
+  function StrikeThrough(event: any) {
+    event.target.className = "m-4 font-bold overline";
+  }
+
+  function DeStrikeThrough(event: any) {
+    event.target.className = "m-4 font-bold";
+  }
+
   return (
-    <header className="fixed container inset-x-0 flex flex-row justify-between bg-transparent text-salmon">
-      <div className="font-rozha text-4xl">ad!</div>
-      <div className="font-montserrat justify-between">
+    <header className="fixed container inset-x-0 py-4 flex flex-row justify-between">
+      <div className="font-arsenica text-4xl text-salmon">ad!</div>
+      <div className="font-montserrat justify-between text-cloudwhite">
         {links.map((link) => (
-          <a className="m-4 text-lg">{link}</a>
+          <a
+            className={"m-4 font-bold"}
+            onMouseOver={StrikeThrough}
+            onMouseOut={DeStrikeThrough}
+          >
+            {link}
+          </a>
         ))}
       </div>
     </header>

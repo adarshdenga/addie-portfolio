@@ -31,6 +31,7 @@ export default {
       'cloudwhite': '#fefcf6',
       'freshcream': '#f4efe6',
       'miracle': '#F8E3CC',
+      'waller': '#ECE7E1',
       // blues
       'skyblue': '#d6e0e2',
       'midnight': '#162a2c',
@@ -47,6 +48,10 @@ export default {
       'o-yellw': '#D59C41',
       'o-beige': '#F5E9E4',
 
+      // grayscale(ish)
+      'slate': '#1A1818',
+
+      
     }
   },
   plugins: [],
