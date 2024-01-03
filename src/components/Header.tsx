@@ -10,9 +10,9 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed container inset-x-0 py-4 flex flex-row justify-between">
-      <div className="font-arsenica text-4xl text-salmon">ad!</div>
-      <div className="font-montserrat justify-between text-cloudwhite">
+    <header className="fixed container inset-x-0 py-4 flex flex-row bg-white justify-between items-center border-b-2 border-charcoal">
+      <div className="font-arsenica text-4xl text-charcoal">ad!</div>
+      <div className="font-montserrat justify-between text-charcoal">
         {links.map((link) => (
           <a
             className={"m-4 font-bold"}
