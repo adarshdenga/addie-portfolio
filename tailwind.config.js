@@ -50,7 +50,9 @@ export default {
 
       // grayscale(ish)
       'slate': '#1A1818',
-
+      'charcoal': '#36454f',
+      'white': '#ffffff',
+      'coolslate': "#bcbcbc",
       
     }
   },
