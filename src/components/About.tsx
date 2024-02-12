@@ -1,4 +1,4 @@
-import Info from "./Info";
+import Info from "./to-reuse/Info";
 
 export default function About() {
   return (
