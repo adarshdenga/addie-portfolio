@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { UserContext } from "./UserContext";
 
 export default function Sections() {
+  const { selectedIndex, setSelectedIndex } = useContext(UserContext);
+
   const sections = [
     {
       name: "ABOUT ME",
@@ -15,8 +18,6 @@ export default function Sections() {
       name: "PROJECTS",
     },
   ];
-
-  const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
     <div className="flex flex-col text-gray text-8xl font-barlow">
