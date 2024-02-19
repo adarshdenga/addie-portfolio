@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         barlow: ['Barlow', 'Sans'],
+        inter: ['Inter', 'Sans'],
       }
     },
     container: {

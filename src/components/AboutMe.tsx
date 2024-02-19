@@ -1,3 +1,3 @@
 export default function AboutMe() {
-  return <div>haiiii :3</div>;
+  return <div className="font-inter text-2xl text-right">This is not that</div>;
 }
