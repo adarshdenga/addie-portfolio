@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://mynameadarsh.github.io/addie-portfolio",
+  "homepage": "http://adarshdenga.github.io/addie-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
