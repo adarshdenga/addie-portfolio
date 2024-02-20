@@ -1,3 +1,13 @@
+import built from "./built.png";
+import cv from "./cv.pdf";
+
 export default function AboutMe() {
-  return <div className="font-inter text-2xl text-right">This is not that</div>;
+  return (
+    <div className="flex flex-col font-inter justify-center">
+      <img src={built} className="w-2/3"></img>
+      <a href={cv} download>
+        (click here for my résumé!)
+      </a>
+    </div>
+  );
 }
