@@ -6,10 +6,10 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Socials() {
   return (
     <>
-      <div className="text-white text-5xl font-barlow font-semibold mb-2">
+      <div className="text-white text-2xl lg:text-5xl font-barlow font-semibold">
         ADARSH DENGA
       </div>
-      <div className="flex flex-row text-gray text-2xl mb-8">
+      <div className="flex flex-row text-gray text-2xl mb-2">
         <FaEnvelope className="mr-2" />
         <FaPhoneAlt className="mr-2" />
         <FaGithub className="mr-2" />

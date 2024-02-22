@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <div className="h-screen w-screen max-h-full max-w-full items-center justify-center bg-dark">
-        <div className="container mx-auto flex flex-row h-full justify-center">
+        <div className="container mx-auto flex flex-col md:flex-row lg:flex-row h-full justify-center">
           <UserContext.Provider value={{ selectedIndex, setSelectedIndex }}>
             <Nav />
             <Info />
