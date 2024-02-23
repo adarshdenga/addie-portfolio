@@ -18,12 +18,12 @@ export default function Education() {
   ];
 
   return (
-    <div className="flex flex-col text-right font-barlow">
+    <div className="flex flex-col text-left md:text-right lg:text-right font-barlow">
       {schools.map((school) => (
         <div className="my-4">
-          <p className="text-4xl">{school.type}</p>
-          <p className="text-4xl">{school.name}</p>
-          <p className="text-xl text-lightgray">{school.years}</p>
+          <p className="text-lg md:text-4xl lg:text-4xl">{school.type}</p>
+          <p className="text-base md:text-4xl lg:text-4xl">{school.name}</p>
+          <p className="md:text-xl lg:text-xl text-lightgray">{school.years}</p>
         </div>
       ))}
     </div>

@@ -5,17 +5,17 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Socials() {
   return (
     <>
-      <div className="text-white text-2xl lg:text-5xl font-barlow font-semibold">
+      <div className="text-white text-2xl md:text-5xl lg:text-5xl font-barlow font-semibold text-center md:text-left lg:text-left ">
         ADARSH DENGA
       </div>
-      <div className="flex flex-row text-gray text-2xl mb-2">
-        <a href="mailto:adarshdenga@gmail.com" className="mr-2">
+      <div className="flex flex-row w-full text-gray text-xl md:text-2xl lg:text-2xl mb-2 justify-center md:justify-normal lg:justify-normal ">
+        <a href="mailto:adarshdenga@gmail.com">
           <FaEnvelope />
         </a>
         <a
           href="https://github.com/adarshdenga"
           target="_blank"
-          className="mr-2"
+          className="mx-2"
         >
           <FaGithub />
         </a>

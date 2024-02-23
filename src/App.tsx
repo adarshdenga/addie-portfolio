@@ -7,8 +7,8 @@ export default function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <>
-      <div className="h-screen w-screen max-h-full max-w-full items-center justify-center bg-dark">
-        <div className="container mx-auto flex flex-col md:flex-row lg:flex-row h-full justify-center">
+      <div className="h-screen w-screen max-h-full max-w-full bg-dark">
+        <div className="container mx-auto flex flex-col md:flex-row lg:flex-row h-full justify-start md:justify-center lg:justify-center">
           <UserContext.Provider value={{ selectedIndex, setSelectedIndex }}>
             <Nav />
             <Info />
