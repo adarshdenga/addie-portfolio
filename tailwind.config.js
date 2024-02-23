@@ -18,6 +18,7 @@ export default {
       'dark': '#151515',
       'white': '#FFFFFF',
       'gray': '#373737',
+      'lightgray': "#ababab",
     }
   },
   plugins: [],
