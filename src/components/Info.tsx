@@ -25,7 +25,7 @@ export default function Info() {
   const { selectedIndex } = useContext(UserContext);
 
   return (
-    <div className="w-1/2 justify-center flex flex-col text-white">
+    <div className="w-full md:w-1/2 lg:w-1/2 justify-center flex flex-col text-white">
       {switchContent(selectedIndex)}
     </div>
   );
