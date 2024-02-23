@@ -20,7 +20,7 @@ export default function Education() {
   return (
     <div className="flex flex-col text-right font-barlow">
       {schools.map((school) => (
-        <div className="mb-8">
+        <div className="my-4">
           <p className="text-4xl">{school.type}</p>
           <p className="text-4xl">{school.name}</p>
           <p className="text-xl text-lightgray">{school.years}</p>
