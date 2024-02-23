@@ -1,5 +1,4 @@
 import { FaEnvelope } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -10,10 +9,19 @@ export default function Socials() {
         ADARSH DENGA
       </div>
       <div className="flex flex-row text-gray text-2xl mb-2">
-        <FaEnvelope className="mr-2" />
-        <FaPhoneAlt className="mr-2" />
-        <FaGithub className="mr-2" />
-        <FaLinkedin />
+        <a href="mailto:adarshdenga@gmail.com" className="mr-2">
+          <FaEnvelope />
+        </a>
+        <a
+          href="https://github.com/adarshdenga"
+          target="_blank"
+          className="mr-2"
+        >
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/adarsh-denga/" target="_blank">
+          <FaLinkedin />
+        </a>
       </div>
     </>
   );
