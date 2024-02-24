@@ -64,7 +64,7 @@ export default function Projects() {
     let nextPercentageUnconstrained = lastPercentage + percentage;
     let nextPercentage = Math.max(
       Math.min(nextPercentageUnconstrained, 0),
-      -100
+      -90
     );
 
     setPercentage(nextPercentage);
