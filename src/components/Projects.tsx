@@ -47,6 +47,8 @@ export default function Projects() {
   const track = document.getElementById("track")!;
 
   const [mouseDownAt, setMouseDownAt] = useState(0);
+  const [lastPercentage, setLastPercentage] = useState(0);
+  const [percentage, setPercentage] = useState(0);
 
   function handleOnMouseDown(e: MouseEvent) {
     setMouseDownAt(e.clientX);
@@ -55,14 +57,30 @@ export default function Projects() {
   function handleOnMouseMove(e: MouseEvent) {
     if (mouseDownAt == 0) return;
 
-    let dx = (mouseDownAt - e.clientX) * -2;
+    let dx = mouseDownAt - e.clientX;
+    let maxDX = window.innerWidth / 2;
 
-    track.style.transform = `translateX(${dx}px)`;
+    let percentage = (dx / maxDX) * -100;
+    let nextPercentageUnconstrained = lastPercentage + percentage;
+    let nextPercentage = Math.max(
+      Math.min(nextPercentageUnconstrained, 0),
+      -100
+    );
+
+    setPercentage(nextPercentage);
+
+    track.animate(
+      {
+        transform: `translateX(${nextPercentage}%)`,
+      },
+      { duration: 1200, fill: "forwards" }
+    );
   }
 
   function handleOnMouseUp() {
     // Reset when mouse up because track shouldn't move when not clicked
     setMouseDownAt(0);
+    setLastPercentage(percentage);
   }
 
   window.onmousedown = (e) => {
@@ -81,7 +99,10 @@ export default function Projects() {
     <div className="flex overflow-auto scrollbar-hide">
       <div className="flex flex-nowrap" id="track">
         {projects.map((project) => (
-          <div className="w-96 h-96 border-2 border-solid border-white mr-10">
+          <div
+            className="w-96 h-96 border-2 border-solid border-gray mr-10"
+            unselectable="on"
+          >
             {project.name}
           </div>
         ))}
