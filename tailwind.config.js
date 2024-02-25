@@ -9,7 +9,15 @@ export default {
       fontFamily: {
         barlow: ['Barlow', 'Sans'],
         inter: ['Inter', 'Sans'],
-      }
+      },
+      animation: {
+        'gradient': 'gradient 8s linear infinite',
+      },
+      keyframes: {
+        'gradient': {
+          to: { 'background-position': '200% center' },
+        }
+      } 
     },
     container: {
       center: true,
@@ -19,7 +27,11 @@ export default {
       'white': '#FFFFFF',
       'gray': '#373737',
       'lightgray': "#ababab",
+      'blue': '#b6dbfc',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

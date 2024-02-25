@@ -18,3 +18,8 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
