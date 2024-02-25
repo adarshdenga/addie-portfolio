@@ -30,20 +30,13 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-1/2 flex flex-col justify-center">
-      <div className="w-full h-2/5">
-        <div className="font-arsenica text-charcoal text-6xl mb-4 text-right">
-          skills
+    <div className="flex flex-wrap justify-end content-start">
+      {skills.map((skill) => (
+        <div className="flex flex-row justify-center p-2 m-1 bg-gray rounded-full">
+          <img src={skill.source} className="h-5 w-5"></img>
+          <div className="px-2 text-sm">{skill.name}</div>
         </div>
-        <div className="flex flex-wrap justify-end content-start">
-          {skills.map((skill) => (
-            <div className="flex flex-row justify-center p-2 m-1 font-montserrat text-charcoal font-bold border-2 border-coolslate rounded-full">
-              <img src={skill.source} className="h-5 w-5"></img>
-              <div className="px-2 text-sm">{skill.name}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Socials() {
   return (
     <>
-      <div className="text-white text-2xl md:text-5xl lg:text-5xl font-barlow font-semibold text-center md:text-left lg:text-left ">
+      <div className="text-white text-2xl md:text-5xl lg:text-5xl font-barlow font-semibold text-center md:text-left lg:text-left mb-2">
         ADARSH DENGA
       </div>
       <div className="flex flex-row w-full text-gray text-xl md:text-2xl lg:text-2xl mb-2 justify-center md:justify-normal lg:justify-normal ">

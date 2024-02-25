@@ -109,7 +109,6 @@ export default function Projects() {
   }
 
   function handleOnMouseUp() {
-    // Reset when mouse up because track shouldn't move when not clicked
     setMouseDownAt(0);
     setLastPercentage(percentage);
   }
