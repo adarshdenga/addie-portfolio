@@ -1,46 +1,77 @@
 import { useState } from "react";
+import network from "../assets/projectimages/network.png";
 
 export default function Projects() {
   const projects = [
     {
-      name: "Project 1",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 2",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 3",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 4",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 5",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 6",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 7",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 8",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 9",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
     {
-      name: "Project 10",
-      about: ["Keyword", "Keyword", "Keyword"],
+      name: "AI Project",
+      skills: ["SKILL", "SKILL", "SKILL"],
+      image: network,
+      about:
+        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
   ];
 
@@ -97,13 +128,25 @@ export default function Projects() {
 
   return (
     <div className="flex overflow-auto scrollbar-hide">
-      <div className="flex flex-nowrap" id="track">
+      <div className="flex flex-nowrap gap-8" id="track">
         {projects.map((project) => (
-          <div
-            className="w-96 h-96 border-2 border-solid border-gray mr-10"
-            unselectable="on"
-          >
-            {project.name}
+          <div className="w-80 h-96 flex flex-col border-2 border-solid border-gray rounded-lg font-inter">
+            <img
+              className="rounded-t-lg"
+              src={project.image}
+              draggable="false"
+            ></img>
+            <div className="flex flex-col p-4 gap-2">
+              <p className="font-bold">{project.name}</p>
+              <p>{project.about}</p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                {project.skills.map((skill) => (
+                  <div className="bg-gray rounded-full px-2 text-white">
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
       </div>
