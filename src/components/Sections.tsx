@@ -23,8 +23,8 @@ export default function Sections() {
   function handleOnMouseEnter(e: MouseEvent, index: Number) {
     if (index == selectedIndex) return;
     const hoveredSection = e.target as Element;
-    hoveredSection.className =
-      "bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent";
+    hoveredSection.className = 
+      "bg-[linear-gradient(to_right,#818cf8,#e0e7ff,#38bdf8,#e879f9,#38bdf8,#e0e7ff,#818cf8)] bg-[length:200%_auto] animate-gradient bg-clip-text transparent-text";
   }
 
   function handleOnMouseOut(e: MouseEvent, index: Number) {
