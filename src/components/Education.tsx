@@ -13,7 +13,7 @@ export default function Education() {
     {
       name: "Rishi Valley School",
       type: "Indian School Cerificate (ISC)",
-      years: "2010-2017",
+      years: "2010 - 2017",
     },
   ];
 
