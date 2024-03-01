@@ -6,6 +6,7 @@ export default function Nav() {
     <div className="w-full md:w-1/2 lg:w-1/2 justify-center flex flex-col">
       <Socials />
       <Sections />
+      <p className="text-gray text-xl">This website is a WIP!</p>
     </div>
   );
 }

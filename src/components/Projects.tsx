@@ -2,69 +2,56 @@ import { useState } from "react";
 import network from "../assets/projectimages/network.png";
 
 export default function Projects() {
+
   const projects = [
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "EVCP",
+      skills: ["Python", "RL", "AI"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "An actor-critic based Reinforcement Learning model to simualte optimal EV charging within a DC grid.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "Circles in a Square - EA",
+      skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "An evolutionary algorithms based approach to the famous problem of packing circles into a square.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "Travelling Salesperson Problem - EA",
+      skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "An evolutionary algorithms based approach to the famous Travelling Salesperson Problem.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "Sociable",
+      skills: ["Unity", "C#", "Python", "VR", "Serious Games"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "A  VR Exposure Therapy game for the purpose of combating social anxiety and its symptoms.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "AAPFL",
+      skills: ["Java", "Haskell", "Compiler Construction"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "A new programming language that is a syntactic mix of JavaScript and Python, with a compiler that produces Sprockell instructions.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "Cube Area Projection",
+      skills: ["Python", "Mathematics", "Convex Hull", "Roation Matrices"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "A fun math project which investigates the projected area of a cube in 2D space.",
     },
     {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
+      name: "This Website!",
+      skills: ["React", "Node", "TypeScript", "HTML", "CSS", "Tailwind"],
       image: network,
       about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
-    },
-    {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
-      image: network,
-      about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
-    },
-    {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
-      image: network,
-      about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+        "A true passion project which put me through my web development paces!",
     },
     {
       name: "AI Project",
@@ -74,6 +61,9 @@ export default function Projects() {
         "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
     },
   ];
+
+  const count = projects.length
+  const maxp = (count - 1) / count * 100;
 
   const track = document.getElementById("track")!;
 
@@ -95,7 +85,7 @@ export default function Projects() {
     let nextPercentageUnconstrained = lastPercentage + percentage;
     let nextPercentage = Math.max(
       Math.min(nextPercentageUnconstrained, 0),
-      -90
+      -maxp 
     );
 
     setPercentage(nextPercentage);
@@ -131,14 +121,16 @@ export default function Projects() {
         {projects.map((project) => (
           <div className="w-80 h-96 flex flex-col border-2 border-solid border-gray rounded-lg font-inter">
             <img
-              className="rounded-t-lg"
+              className="rounded-t-lg h-1/2"
               src={project.image}
               draggable="false"
             ></img>
-            <div className="flex flex-col p-4 gap-2">
-              <p className="font-bold">{project.name}</p>
-              <p>{project.about}</p>
-              <div className="flex flex-wrap gap-2 text-xs">
+            <div className="flex flex-col h-1/2 p-4 justify-between">
+              <div>
+                <p className="font-bold">{project.name}</p>
+                <p>{project.about}</p>
+              </div>
+              <div className="flex flex-wrap gap-1 text-xs bottom-0">
                 {project.skills.map((skill) => (
                   <div className="bg-gray rounded-full px-2 text-white">
                     {skill}
