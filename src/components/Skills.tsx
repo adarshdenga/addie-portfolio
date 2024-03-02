@@ -15,7 +15,7 @@ export default function Skills() {
 
   const skills = [
     { name: "Java", source: java },
-    { name: "Python", source: javascript },
+    { name: "Python", source: python },
     { name: "TensorFlow", source: tensorflow },
     { name: "PyTorch", source: pytorch },
     { name: "React", source: react },

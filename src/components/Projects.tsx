@@ -116,7 +116,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="flex overflow-auto scrollbar-hide">
+    <div className="flex overflow-auto scrollbar-hide fade-appear">
       <div className="flex flex-nowrap gap-8" id="track">
         {projects.map((project) => (
           <div className="w-80 h-96 flex flex-col border-2 border-solid border-gray rounded-lg font-inter">
