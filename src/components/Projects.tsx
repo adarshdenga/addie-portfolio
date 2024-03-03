@@ -1,14 +1,13 @@
 import { useState } from "react";
 import network from "../assets/projectimages/network.png";
-import tsp from "../assets/projectimages/tsp.png"
-import cias from "../assets/projectimages/cias.png"
-import vret from "../assets/projectimages/vret.png"
-import aapfl from "../assets/projectimages/aapfl.png"
-import cube from "../assets/projectimages/cube.png"
-import shrug from "../assets/projectimages/shrug.png"
+import tsp from "../assets/projectimages/tsp.png";
+import cias from "../assets/projectimages/cias.png";
+import vret from "../assets/projectimages/vret.png";
+import aapfl from "../assets/projectimages/aapfl.png";
+import cube from "../assets/projectimages/cube.png";
+import website from "../assets/projectimages/website.png";
 
 export default function Projects() {
-
   const projects = [
     {
       name: "EVCP",
@@ -55,7 +54,7 @@ export default function Projects() {
     {
       name: "This Website!",
       skills: ["React", "Node", "TypeScript", "HTML", "CSS", "Tailwind"],
-      image: shrug,
+      image: website,
       about:
         "A true passion project which put me through my web development paces!",
     },
@@ -70,8 +69,8 @@ export default function Projects() {
   //     "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
   // },
 
-  const count = projects.length
-  const maxp = (count - 1) / count * 100;
+  const count = projects.length;
+  const maxp = ((count - 1) / count) * 100;
 
   const track = document.getElementById("track")!;
 
@@ -93,7 +92,7 @@ export default function Projects() {
     let nextPercentageUnconstrained = lastPercentage + percentage;
     let nextPercentage = Math.max(
       Math.min(nextPercentageUnconstrained, 0),
-      -maxp 
+      -maxp
     );
 
     setPercentage(nextPercentage);
