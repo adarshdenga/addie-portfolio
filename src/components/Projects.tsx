@@ -2,6 +2,10 @@ import { useState } from "react";
 import network from "../assets/projectimages/network.png";
 import tsp from "../assets/projectimages/tsp.png"
 import cias from "../assets/projectimages/cias.png"
+import vret from "../assets/projectimages/vret.png"
+import aapfl from "../assets/projectimages/aapfl.png"
+import cube from "../assets/projectimages/cube.png"
+import shrug from "../assets/projectimages/shrug.png"
 
 export default function Projects() {
 
@@ -30,39 +34,41 @@ export default function Projects() {
     {
       name: "Sociable",
       skills: ["Unity", "C#", "Python", "VR", "Serious Games"],
-      image: network,
+      image: vret,
       about:
         "A  VR Exposure Therapy game for the purpose of combating social anxiety and its symptoms.",
     },
     {
       name: "AAPFL",
       skills: ["Java", "Haskell", "Compiler Construction"],
-      image: network,
+      image: aapfl,
       about:
         "A new programming language that is a syntactic mix of JavaScript and Python, with a compiler that produces Sprockell instructions.",
     },
     {
       name: "Cube Area Projection",
       skills: ["Python", "Mathematics", "Convex Hull", "Roation Matrices"],
-      image: network,
+      image: cube,
       about:
-        "A fun math project which investigates the projected area of a cube in 2D space.",
+        "A fun math project which investigates area of a cube when projected on a 2D surface.",
     },
     {
       name: "This Website!",
       skills: ["React", "Node", "TypeScript", "HTML", "CSS", "Tailwind"],
-      image: network,
+      image: shrug,
       about:
         "A true passion project which put me through my web development paces!",
     },
-    {
-      name: "AI Project",
-      skills: ["SKILL", "SKILL", "SKILL"],
-      image: network,
-      about:
-        "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
-    },
   ];
+
+  // TEXMPLATE PROJECT TO EXPAND SECTION
+  // {
+  //   name: "AI Project",
+  //   skills: ["SKILL", "SKILL", "SKILL"],
+  //   image: network,
+  //   about:
+  //     "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+  // },
 
   const count = projects.length
   const maxp = (count - 1) / count * 100;
