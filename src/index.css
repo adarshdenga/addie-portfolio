@@ -38,13 +38,14 @@
 }
 
 .cursor {
-  background-color: yellow;
+  background-color: white;
   height: 32px;
   width: 32px;
   border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
+  mix-blend-mode: difference;
   pointer-events: none;
 }
 

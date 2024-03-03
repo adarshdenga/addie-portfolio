@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Cursor() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState({ x: -16, y: -16 });
   const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
