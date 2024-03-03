@@ -1,5 +1,7 @@
 import { useState } from "react";
 import network from "../assets/projectimages/network.png";
+import tsp from "../assets/projectimages/tsp.png"
+import cias from "../assets/projectimages/cias.png"
 
 export default function Projects() {
 
@@ -14,14 +16,14 @@ export default function Projects() {
     {
       name: "Circles in a Square - EA",
       skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
-      image: network,
+      image: cias,
       about:
         "An evolutionary algorithms based approach to the famous problem of packing circles into a square.",
     },
     {
       name: "Travelling Salesperson Problem - EA",
       skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
-      image: network,
+      image: tsp,
       about:
         "An evolutionary algorithms based approach to the famous Travelling Salesperson Problem.",
     },
@@ -121,7 +123,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div className="w-80 h-96 flex flex-col border-2 border-solid border-gray rounded-lg font-inter">
             <img
-              className="rounded-t-lg h-1/2"
+              className="rounded-t-lg h-1/2 object-cover"
               src={project.image}
               draggable="false"
             ></img>
