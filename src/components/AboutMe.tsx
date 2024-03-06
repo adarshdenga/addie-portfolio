@@ -3,8 +3,8 @@ import Skills from "./Skills";
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col font-inter justify-center text-right gap-3 fade-appear">
-      <div className="text-4xl mb-5">
+    <div className="flex flex-col font-inter justify-center text-center md:text-right lg:text-right gap-3 fade-appear">
+      <div className="text-lg md:text-4xl lg:text-4xl mb-5">
         I'm a programmer who has a passion for solving problems in unique and
         innovative ways. Get in touch :)
       </div>
