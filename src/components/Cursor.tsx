@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 export default function Cursor() {
   const [mousePosition, setMousePosition] = useState({ x: -16, y: -16 });
-  const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
     function mouseMove(e: MouseEvent) {
@@ -25,10 +24,6 @@ export default function Cursor() {
   };
 
   return (
-    <motion.div
-      className="cursor"
-      variants={variants}
-      animate={cursorVariant}
-    />
+    <motion.div className="cursor" variants={variants} animate="default" />
   );
 }
