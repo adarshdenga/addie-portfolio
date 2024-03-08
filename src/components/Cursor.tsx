@@ -24,6 +24,10 @@ export default function Cursor() {
   };
 
   return (
-    <motion.div className="cursor" variants={variants} animate="default" />
+    <motion.div
+      className="cursor hidden md:block lg:block"
+      variants={variants}
+      animate="default"
+    />
   );
 }
