@@ -5,8 +5,8 @@ export default function AboutMe() {
   return (
     <div className="flex flex-col font-inter justify-center text-center md:text-right lg:text-right gap-3 fade-appear">
       <div className="text-lg md:text-2xl lg:text-4xl mb-5">
-        I'm a programmer who has a passion for solving problems in unique and
-        innovative ways. Get in touch :)
+        I'm a passionate programmer who is currently based in the Netherlands.
+        Get in touch!
       </div>
       <Skills />
       <a href={cv} target="_blank">
