@@ -25,7 +25,7 @@ export default function Cursor() {
 
   return (
     <motion.div
-      className="cursor hidden md:block lg:block"
+      className="cursor hidden md:hidden lg:block"
       variants={variants}
       animate="default"
     />
