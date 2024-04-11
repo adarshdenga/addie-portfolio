@@ -6,6 +6,7 @@ import vret from "../assets/projectimages/vret.png";
 import aapfl from "../assets/projectimages/aapfl.png";
 import cube from "../assets/projectimages/cube.png";
 import website from "../assets/projectimages/website.png";
+import { FaLink } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
@@ -13,20 +14,23 @@ export default function Projects() {
       name: "EVCP",
       skills: ["Python", "RL", "AI"],
       image: network,
+      link: "https://github.com/adarshdenga/Electric-Vehicle-Charging-Planning",
       about:
         "An actor-critic based Reinforcement Learning model to simualte optimal EV charging within a DC grid.",
     },
     {
-      name: "Circles in a Square - EA",
+      name: "Circles in a Square",
       skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
       image: cias,
+      link: "https://github.com/adarshdenga/Circles-In-A-Square",
       about:
         "An evolutionary algorithms based approach to the famous problem of packing circles into a square.",
     },
     {
-      name: "Travelling Salesperson Problem - EA",
+      name: "Travelling Salesperson",
       skills: ["Python", "Evolutionary Algorithms", "AI", "Optimisation"],
       image: tsp,
+      link: "https://github.com/adarshdenga/Traveling-Salesperson-Problem",
       about:
         "An evolutionary algorithms based approach to the famous Travelling Salesperson Problem.",
     },
@@ -34,6 +38,7 @@ export default function Projects() {
       name: "Sociable",
       skills: ["Unity", "C#", "Python", "VR", "Serious Games"],
       image: vret,
+      link: "https://github.com/adarshdenga/Sociable-VR",
       about:
         "A  VR Exposure Therapy game for the purpose of combating social anxiety and its symptoms.",
     },
@@ -41,13 +46,15 @@ export default function Projects() {
       name: "AAPFL",
       skills: ["Java", "Haskell", "Compiler Construction"],
       image: aapfl,
+      link: "https://github.com/adarshdenga/AAPFL",
       about:
         "A new programming language that is a syntactic mix of JavaScript and Python, with a compiler that produces Sprockell instructions.",
     },
     {
-      name: "Cube Area Projection",
+      name: "Cube Area",
       skills: ["Python", "Mathematics", "Convex Hull", "Roation Matrices"],
       image: cube,
+      link: "https://github.com/adarshdenga/cube-area-projection",
       about:
         "A fun math project which investigates area of a cube when projected on a 2D surface.",
     },
@@ -55,6 +62,7 @@ export default function Projects() {
       name: "This Website!",
       skills: ["React", "Node", "TypeScript", "HTML", "CSS", "Tailwind"],
       image: website,
+      link: "https://github.com/adarshdenga/addie-portfolio",
       about:
         "A true passion project which put me through my web development paces!",
     },
@@ -134,7 +142,12 @@ export default function Projects() {
             ></img>
             <div className="flex flex-col h-1/2 p-4 justify-between">
               <div>
-                <p className="font-bold">{project.name}</p>
+                <div className="w-full justify-between flex flex-row">
+                  <p className="font-bold">{project.name}</p>
+                  <a href={project.link} target="_blank">
+                    <FaLink />
+                  </a>
+                </div>
                 <p>{project.about}</p>
               </div>
               <div className="flex flex-wrap gap-1 text-xs bottom-0">

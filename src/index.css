@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  cursor: none;
+  /* cursor: none; */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -28,9 +28,9 @@
   background-clip: text;
 }
 
-.transparent-text{
+.transparent-text {
   color: #000;
-  color: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0);
 }
 
 .fade-appear {
