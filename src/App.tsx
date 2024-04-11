@@ -2,7 +2,6 @@ import { useState } from "react";
 import { UserContext } from "./UserContext";
 import Nav from "./components/Nav";
 import Info from "./components/Info";
-import Cursor from "./components/Cursor";
 
 export default function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
