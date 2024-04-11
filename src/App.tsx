@@ -17,7 +17,7 @@ export default function App() {
           </UserContext.Provider>
         </div>
       </div>
-      <Cursor />
+      {/* <Cursor /> */}
     </>
   );
 }
