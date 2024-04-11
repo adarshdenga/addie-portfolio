@@ -70,11 +70,12 @@ export default function Projects() {
 
   // TEXMPLATE PROJECT TO EXPAND SECTION
   // {
-  //   name: "AI Project",
-  //   skills: ["SKILL", "SKILL", "SKILL"],
-  //   image: network,
+  //   name: "",
+  //   skills: ["", "", ""],
+  //   image: img,
+  //   link: "",
   //   about:
-  //     "This was a project about AI. It is Artificially Intelligent. It has many intelligence.",
+  //     "",
   // },
 
   const count = projects.length;
