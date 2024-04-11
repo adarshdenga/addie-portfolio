@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Cursor() {
+export default function Cursor(props: any) {
   const [mousePosition, setMousePosition] = useState({ x: -16, y: -16 });
 
   useEffect(() => {
@@ -24,10 +24,8 @@ export default function Cursor() {
   };
 
   return (
-    <motion.div
-      className="cursor hidden md:hidden lg:block"
-      variants={variants}
-      animate="default"
-    />
+    <motion.div className="cursor" variants={variants} animate="default">
+      {props.page}
+    </motion.div>
   );
 }

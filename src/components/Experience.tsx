@@ -15,7 +15,9 @@ export default function Expereince() {
       </p>
       {internships.map((internship) => (
         <div className="flex flex-col gap-1">
-          <p className="text-lg md:text-xl lg:text-4xl">{internship.title}</p>
+          <p className="text-lg md:text-xl lg:text-4xl font-bold">
+            {internship.title}
+          </p>
           <div className="text-base md:text-base lg:text-3xl">
             @{" "}
             <a
