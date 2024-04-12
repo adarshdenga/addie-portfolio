@@ -41,8 +41,8 @@ export default function Cursor(props: any) {
           style={{
             transform: `translate(${position.x}px, ${position.y}px)`,
           }}
-          className="cursor"
-        />
+          className="flex cursor text-center justify-center items-center text-white text-2xl"
+        ></div>
       );
   }
 }
