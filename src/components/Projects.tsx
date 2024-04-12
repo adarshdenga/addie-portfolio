@@ -135,7 +135,7 @@ export default function Projects() {
     <div className="flex overflow-auto scrollbar-hide fade-appear">
       <div className="flex flex-nowrap gap-8" id="track">
         {projects.map((project) => (
-          <div className=" bg-white bg-opacity-5 w-80 h-96 flex flex-col border-2 border-solid border-white rounded-lg font-inter overflow-hidden">
+          <div className=" bg-white bg-opacity-10 w-80 h-96 flex flex-col border-1 border-solid border-white rounded-xl font-inter overflow-hidden">
             <img
               className="h-1/2 object-cover"
               src={project.image}
@@ -153,7 +153,7 @@ export default function Projects() {
               </div>
               <div className="flex flex-wrap gap-1 text-xs bottom-0">
                 {project.skills.map((skill) => (
-                  <div className="bg-white bg-opacity-20 rounded-full px-2 text-white">
+                  <div className="bg-white bg-opacity-15 rounded-full px-2 text-white">
                     {skill}
                   </div>
                 ))}

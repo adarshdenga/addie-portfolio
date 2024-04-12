@@ -58,6 +58,37 @@
   pointer-events: none;
 }
 
+.section-choice {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.section-choice:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 8px;
+  left: 0;
+  top: 50%;
+  background: white;
+  transform-origin: center left;
+  transition: 300ms ease-in-out;
+}
+
+.section-choice:hover:after {
+  width: 100%;
+}
+
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
