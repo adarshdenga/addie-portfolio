@@ -10,7 +10,7 @@ export default function Socials() {
       <div className="text-white text-2xl md:text-5xl lg:text-5xl font-barlow font-semibold text-center md:text-left lg:text-left mb-2">
         ADARSH DENGA
       </div>
-      <div className="flex flex-row w-full text-lightgray text-xl md:text-2xl lg:text-2xl mb-2 justify-center md:justify-normal lg:justify-normal gap-3">
+      <div className="flex flex-row w-full text-white text-xl md:text-2xl lg:text-2xl mb-2 justify-center md:justify-normal lg:justify-normal gap-3">
         <a href="mailto:adarshdenga@gmail.com">
           <FaEnvelope />
         </a>

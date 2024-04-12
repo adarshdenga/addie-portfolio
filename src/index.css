@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  /* cursor: none; */
+  cursor: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -33,10 +33,24 @@
 }
 
 .cursor {
-  background-color: white;
+  border: 2px solid #ffffff;
   height: 32px;
   width: 32px;
   border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.drag-cursor {
+  border: 2px solid #ffffff;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
   position: fixed;
   top: 0;
   left: 0;
