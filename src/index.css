@@ -34,8 +34,8 @@
 
 .cursor {
   border: 2px solid #ffffff;
-  height: 32px;
-  width: 32px;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -46,8 +46,8 @@
 
 .drag-cursor {
   border: 2px solid #ffffff;
-  height: 64px;
-  width: 64px;
+  height: 84px;
+  width: 84px;
   border-radius: 50%;
   border-style: solid;
   border-color: white;

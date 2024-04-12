@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Cursor(props: any) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const offset = props.page == 3 ? 32 : 16;
+  const offset = props.page == 3 ? 42 : 24;
 
   useEffect(() => {
     addEventListeners();
@@ -32,7 +32,7 @@ export default function Cursor(props: any) {
           }}
           className="flex drag-cursor text-center justify-center items-center text-white font-inter text-xs"
         >
-          DRAG
+          ← DRAG →
         </div>
       );
     default:
