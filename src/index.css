@@ -10,6 +10,11 @@
   display: none;
 }
 
+.blob-gradient {
+  background: #010e4a;
+  background: radial-gradient(at right center, #010e4a, #2f0144);
+}
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -21,16 +26,6 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.transparent-text {
-  color: #000;
-  color: rgba(0, 0, 0, 0);
 }
 
 .fade-appear {

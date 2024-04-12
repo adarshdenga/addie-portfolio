@@ -32,7 +32,7 @@ export default function Skills() {
   return (
     <div className="flex flex-wrap justify-center md:justify-end lg:justify-end content-start gap-2">
       {skills.map((skill) => (
-        <div className="flex flex-row justify-center gap-2 p-2 bg-gray rounded-full font-inter text-xs">
+        <div className="flex flex-row justify-center gap-2 p-2 bg-white bg-opacity-10 rounded-full font-inter text-xs">
           <img
             src={skill.source}
             className="h-4 w-4 md:h-4 lg:h-4 md:w-4 lg:w-4"
