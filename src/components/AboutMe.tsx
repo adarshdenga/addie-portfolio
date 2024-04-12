@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div className="text-xl mb-10 font-inter">
         I'm a passionate programmer and Master's student specialising in
         Artificial Intelligence currently based in the Netherlands. Get in
-        touch!
+        touch! :)
       </div>
       <Skills />
     </div>
