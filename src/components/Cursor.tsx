@@ -23,9 +23,5 @@ export default function Cursor(props: any) {
     },
   };
 
-  return (
-    <motion.div className="cursor" variants={variants} animate="default">
-      {props.page}
-    </motion.div>
-  );
+  return <div className="cursor">{props.page}</div>;
 }
