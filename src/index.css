@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 * {
-  /* cursor: none; */
+  cursor: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.blob-gradient {
+  background: #010e4a;
+  background: radial-gradient(at right center, #010e4a, #2f0144);
 }
 
 .scrollbar-hide {
@@ -23,30 +28,65 @@
   user-select: none;
 }
 
-.bg-clip-text {
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.transparent-text {
-  color: #000;
-  color: rgba(0, 0, 0, 0);
-}
-
 .fade-appear {
   animation: fade-in 300ms;
 }
 
 .cursor {
-  background-color: white;
-  height: 32px;
-  width: 32px;
+  border: 2px solid #ffffff;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
   mix-blend-mode: difference;
   pointer-events: none;
+}
+
+.drag-cursor {
+  border: 2px solid #ffffff;
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.section-choice {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.section-choice:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 8px;
+  left: 0;
+  top: 50%;
+  background: white;
+  transform-origin: center left;
+  transition: 300ms ease-in-out;
+}
+
+.section-choice:hover:after {
+  width: 100%;
+}
+
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes fade-in {
