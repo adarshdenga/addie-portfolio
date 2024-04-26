@@ -23,7 +23,7 @@ export default function Sections() {
   function handleOnMouseEnter(e: MouseEvent, index: Number) {
     if (index == selectedIndex) return;
     const hoveredSection = e.target as Element;
-    hoveredSection.className = "section-choice blur-sm w-min";
+    hoveredSection.className = "section-choice w-min";
   }
 
   function handleOnMouseOut(e: MouseEvent, index: Number) {

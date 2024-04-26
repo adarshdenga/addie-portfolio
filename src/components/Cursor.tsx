@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Cursor(props: any) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const offset = props.page == 3 ? 42 : 24;
+  const offset = 12;
 
   useEffect(() => {
     addEventListeners();
@@ -30,9 +30,9 @@ export default function Cursor(props: any) {
           style={{
             transform: `translate(${position.x}px, ${position.y}px)`,
           }}
-          className="flex drag-cursor text-center justify-center items-center text-white font-inter text-xs"
+          className="flex cursor sm:invisible lg:visible text-center justify-center items-center text-black font-inter text-xs"
         >
-          ← DRAG →
+          ↔
         </div>
       );
     default:
@@ -41,9 +41,8 @@ export default function Cursor(props: any) {
           style={{
             transform: `translate(${position.x}px, ${position.y}px)`,
           }}
-          className="flex cursor text-center justify-center items-center text-white text-2xl"
+          className="flex cursor sm:invisible lg:visible text-center justify-center items-center text-white text-2xl"
         ></div>
       );
   }
-
 }
